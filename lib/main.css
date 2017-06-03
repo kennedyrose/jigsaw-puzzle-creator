@@ -1,0 +1,147 @@
+body {
+	background-image:url('../img/bg.jpg');
+	font-family: Georgia;
+	margin: 0px;
+	font-size:16px;
+}
+img:hover {
+	cursor: url('../img/open.cur'), auto;
+}
+img:active {
+	cursor: url('../img/closed.cur'), auto;
+}
+#pbar {
+	width: 190px;
+	text-align: left;
+}
+#pb1 {
+	width: 190px;
+	text-align: left;
+}
+#pb1 img {
+	cursor: auto;
+}
+div#loader {
+	background-image:url('../img/trans.png');
+	width:100%;
+	height: 100%;
+	position:absolute;
+	text-align:center;
+	margin-left: 0px;
+	margin-top: 0px;
+	z-index:2000;
+	color: #ffffff;
+}
+div#spinner {
+	background-image:url('../img/popover.png');
+	display:block;
+	width: 450px;
+	height: 425px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -212px;
+	margin-left: -225px;
+}
+div#win {
+	background-image:url('../img/trans.png');
+	width:100%;
+	height: 100%;
+	position:absolute;
+	text-align:center;
+	margin-left: 0px;
+	margin-top: 0px;
+	z-index:2000;
+	color: #ffffff;
+	display:none;
+}
+div#optionsmenu {
+	background-image:url('../img/trans.png');
+	width:100%;
+	height: 100%;
+	position:absolute;
+	text-align:center;
+	margin-left: 0px;
+	margin-top: 0px;
+	z-index:2000;
+	color: #ffffff;
+	display:none;
+}
+div.blackbox {
+	background-image:url('../img/popover.png');
+	display:block;
+	width: 450px;
+	height: 425px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -212px;
+	margin-left: -225px;
+}
+div.message {
+	width:330px;
+	text-align:left;
+}
+a {
+	color: #ffffff;
+}
+a:hover {
+	color: #cccccc;
+	text-decoration:none;
+}
+#check {
+	display:none;
+}
+#optionsbtn {
+	position:absolute;
+	top:15px;
+	right:15px;
+}
+.smaller {
+	font-size:11px;
+}
+.fakelink {
+	color: #ffffff;
+	text-decoration:underline;
+}
+.fakelink:hover {
+	color: #cccccc;
+	text-decoration:none;
+}
+#title a {
+	font-family:Impact;
+	position:absolute;
+	top:15px;
+	left:15px;
+	text-decoration:none;
+	color: SteelBlue;
+}
+div#ajax_upload_demo iframe {
+	position:fixed;
+	left:-9000px;
+	width:1px;
+	height:1px;
+}
+#uploadbtn {
+	text-align:left;
+	width:407px;
+}
+#options {
+	font-size:14px;
+	text-align:center;
+}
+#uploader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -203px;
+}
+#title a {
+	font-family:Impact;
+	position:absolute;
+	top:15;
+	left:15;
+	text-decoration:none;
+	color: SteelBlue;
+}

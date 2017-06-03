@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Puzzle Creator With Ad Support Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Puzzle Creator With Ad Support&rdquo; Documentation by &ldquo;Kennedy Rose&rdquo; v1.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Puzzle Creator With Ad Support&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 6/7/2012<br>
+					By: Kennedy Rose<br>
+					Email: <a href="mailto:kennedy@kennedyrose.com">kennedy@kennedyrose.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0"><b>Requirements:</b> A web server with at least 640kb of space, PHP 5 or higher.<br /><b>Note:</b> Thank you for purchasing my script. If you have any questions that are not answered with this help file, please feel free to email me at <a href="mailto:kennedy@kennedyrose.com">kennedy@kennedyrose.com</a>.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#quickstart">Quick Start Guide</a></li>
+			<li><a href="#ads">Inserting Ads</a></li>
+			<li><a href="#uploading">Uploading Images to Use as Puzzles</a></li>
+			<li><a href="#deleting">Deleting images</a></li>
+			<li><a href="#options">Options Menu</a></li>
+			<li><a href="#trouble">Known Issues</a></li>
+			<li><a href="#sources">Sources</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="quickstart"><strong>A) Quick Start Guide</strong> - <a href="#toc">top</a></h3>
+		<p>To setup "Puzzle Creator With Ad Support" on your server, just upload the contents of this entire package to your server. Make sure that you change the permissions on all files to "0644" if not already set. Or, if you are on a Windows server, set "allow" to "anonymous web user" for the whole directory.</p>
+		<p>Your default puzzle should appear in the director that you uploaded the script to. <b>Example:</b> If you uploaded the script to the /puzzle/ directory, it should appear here:</p>
+		<p><pre>http://www.yoursite.com/puzzle/</pre></p>
+		<p>That's it! The rest of this readme will cover more advanced options. So there is no need to read any further if this is all you wish to do.</p>
+		
+		<hr>
+		
+		<h3 id="ads"><strong>B) Inserting Ads</strong> - <a href="#toc">top</a></h3>
+		<p>To insert an ad at the bottom of the puzzle, first open up "ad.txt" with any text editor. This is an empty file that came with this package.</p>
+		<p>Copy and paste any ad code here that you wish to display at the bottom of the puzzle. <b>Example:</b> Google Adsense code will look something like this:</p>
+		<p><img src="assets/ads.jpg" style="border-style:solid;border-width:1px;" /></p>
+		<p>So you would just select that entire block of code and paste it into "ad.txt" with a text editor.</p>
+		<p>The next step is to upload "ad.txt" that you have just edited onto the server. After that, your advertisement will show up at the bottom of "index.php".</p>
+		
+		<hr>
+		
+		<h3 id="uploading"><strong>C) Uploading Images to Use as Puzzles</strong> - <a href="#toc">top</a></h3>
+		<p>If you would like to change the default puzzle (the puzzle that loads if no image has been uploaded), replace "default.jpg" located in the /puzzles/ directory. The script always uses the "default.jpg" if a new image has not been uploaded by the player yet.</p>
+		<p>If you would like to upload a new image to temporarily use as a puzzle, first click "options" in the upper-right hand corner of the page. Then click, "Upload an image to use as a puzzle!" Now your screen should look something like this:</p>
+		<p><img src="assets/upload.jpg" style="border-style:solid;border-width:1px;" /></p>
+		<p>Click "Browse" to browse your computer for an image. Once you have selected an image, click "Create puzzle!" Once the image is done uploading, a new puzzle should appear with the image you selected.</p>
+		
+		<hr>
+
+		<h3 id="deleting"><strong>D) Deleting Images</strong> - <a href="#toc">top</a></h3>
+		<p>To delete any images that are not the default image (default.jpg) from the /puzzles/ folder, just run "cleanup.php" from your browser. <b>Example:</b> If you uploaded the script to the directory, /puzzle/, you would type the following into your browser:</p>
+		<p><pre>http://www.yoursite.com/puzzle/cleanup.php</pre></p>
+		<p>Once the script is done deleting all of the uploaded images, the words, "Images deleted successfully!" should display on the screen.</p>
+
+		<hr>
+		
+		<h3 id="options"><strong>E) Options Menu</strong> - <a href="#toc">top</a></h3>
+		<p>To display the options menu, click the "options" button located in the upper-right corner of the puzzle area.</p>
+		<p><b>Difficulty:</b> This selects the difficulty from easiest to hardest. The default is "Normal".</p>
+		<p><b>Timer:</b> Having this box checked will display the amount of time taken to complete the puzzle at the top of the screen. The default is "on". (Note: Even if the timer is turned off, you are still being timed and can place a high score. It just won't display the time at the top.)</p>
+		<p><b>Guide:</b> Having this box checked will display what the completed image will look like behind the puzzle pieces. The default is "off".</p>
+		<p><b>View Scoreboard:</b> Clicking this link will show you the current lowest times. If your time is less than the times on the scoreboard, your time will be recorded here. (Note: Clicking this link will end the current puzzle.)</p>
+
+		<hr>
+		
+		<h3 id="trouble"><strong>F) Known Issues</strong> - <a href="#toc">top</a></h3>
+		<ul>
+		<li>The only known issue is with Internet Explorer. At the moment, the image uploader does not work with Internet Explorer. I have included a simple PHP script in "upload.php" that will detect if the browser is IE and ask them to switch to another browser. Also, the Javascript on "index.php" does not work in Internet Explorer's quirks mode.</li>
+		</ul>
+		<p>If you catch any errors, email me at <a href="mailto:kennedy@kennedyrose.com">kennedy@kennedyrose.com</a></p>
+		
+		<hr>
+		
+		<h3 id="sources"><strong>G) Sources</strong> - <a href="#toc">top</a></h3>
+		<p>Any code that is not mine has been used with permission under an <a href="http://www.opensource.org/licenses/MIT" target="_blank">MIT</a> or <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GPL</a> license. Some code has been slightly modified for the purposes of implimentation and speed. See their respective websites for the original code.</p>
+		<ul>
+		<li><a href="http://www.jquery.com/" target="_blank">jQuery</a> is used for the progress bar, the image uploader, and most of the UI.</li>
+		<li>A heavily butchered version of <a href="http://www.walterzorn.de/" target="_blank">Walter Zorn</a>'s Dragon & Drop script is used for dragging the pieces around the puzzle area. (Website is in German.)</li>
+		<li>A section from <a href="http://scottjehl.com/" target="_blank">Scott Jehl</a>'s <a href="https://github.com/scottjehl/jQuery-Custom-File-Input" target="_blank">customfileinput plugin</a> has been used for uploading images without redirecting to a new page.</li>
+		</ul>
+		
+		
+		<hr>
+		
+		<p>Thank you for purchasing this script! If you have questions, feel free to email me at <a href="mailto:kennedy@kennedyrose.com">kennedy@kennedyrose.com</a>. Thanks again!</p> 
+		
+		<p class="append-bottom alt large"><strong>Kennedy Rose</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
